@@ -1,11 +1,3 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base"],
-  "packageRules": [
-    {
-      "matchPackagePatterns": ["^@acme/", "eslint-config-acme"],
-      "enabled": false
-    }
-  ],
-  "updateInternalDeps": true
+  "extends": ["github>sarvex/renovate-configs:js-app"]
 }
