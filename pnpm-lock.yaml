@@ -8,21 +8,21 @@ importers:
       '@manypkg/cli': ^0.20.0
       '@types/prettier': ^2.7.2
       eslint: ^8.34.0
-      eslint-config-acme: 0.0.0
+      eslint-config-acme: 2.0.0
       prettier: ^2.8.4
       prettier-plugin-tailwindcss: ^0.2.3
       turbo: ^1.8.2
-      typescript: ^4.9.5
+      typescript: ^5.0.4
     dependencies:
       '@ianvs/prettier-plugin-sort-imports': 3.7.1_prettier@2.8.4
       '@manypkg/cli': 0.20.0
       '@types/prettier': 2.7.2
       eslint: 8.34.0
-      eslint-config-acme: link:packages/config/eslint
+      eslint-config-acme: 2.0.0_yele76u6xpn2algtn6a7opdlda
       prettier: 2.8.4
       prettier-plugin-tailwindcss: 0.2.3_2m34gfnsqvzqy5bj5eci3wt3by
       turbo: 1.8.2
-      typescript: 4.9.5
+      typescript: 5.1.6
 
   apps/nextjs:
     specifiers:
@@ -135,7 +135,7 @@ importers:
       eslint: ^8.34.0
       eslint-config-next: ^13.2.0
       eslint-config-prettier: ^8.6.0
-      eslint-config-turbo: ^0.0.8
+      eslint-config-turbo: ^1.10.12
       eslint-plugin-react: 7.32.2
       typescript: ^4.9.5
     dependencies:
@@ -144,7 +144,7 @@ importers:
       '@typescript-eslint/parser': 5.49.0_7kw3g6rralp5ps6mg3uyzz6azm
       eslint-config-next: 13.2.0_7kw3g6rralp5ps6mg3uyzz6azm
       eslint-config-prettier: 8.6.0_eslint@8.34.0
-      eslint-config-turbo: 0.0.8_eslint@8.34.0
+      eslint-config-turbo: 1.10.12_eslint@8.34.0
       eslint-plugin-react: 7.32.2_eslint@8.34.0
     devDependencies:
       eslint: 8.34.0
@@ -1690,7 +1690,6 @@ packages:
   /dotenv/16.0.3:
     resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
     engines: {node: '>=12'}
-    dev: true
 
   /duplexer3/0.1.5:
     resolution: {integrity: sha512-1A8za6ws41LQgv9HrE/66jyC5yuSjQ3L/KOpFtoBilsAK2iA2wuS5rTt1OCzIvtS2V7nVmedsUU+DGRcjBmOYA==}
@@ -1829,6 +1828,29 @@ packages:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
 
+  /eslint-config-acme/2.0.0_yele76u6xpn2algtn6a7opdlda:
+    resolution: {integrity: sha512-gYV6vSX5z+DrfPQtb9YtBMXwTtArJ7bMThqY4+XHpOoSrCn7nmuYgkVdXuVMgobHz2mkMl2tLCW1jUZ640w2FQ==}
+    engines: {node: '>=15.0.0'}
+    peerDependencies:
+      eslint: ^8.29.0
+      eslint-config-airbnb: ^19.0.4
+      eslint-config-prettier: ^8.5.0
+      eslint-import-resolver-alias: ^1.1.2
+      eslint-plugin-import: ^2.26.0
+      eslint-plugin-jsx-a11y: ^6.6.1
+      eslint-plugin-prettier: ^4.2.1
+      eslint-plugin-react: ^7.31.11
+      eslint-plugin-react-hooks: ^4.6.0
+      eslint-plugin-simple-import-sort: ^8.0.0
+      eslint-plugin-tailwindcss: ^3.7.1
+      prettier: ^2.8.0
+      prettier-plugin-tailwindcss: ^0.2.0
+    dependencies:
+      eslint: 8.34.0
+      prettier: 2.8.4
+      prettier-plugin-tailwindcss: 0.2.3_2m34gfnsqvzqy5bj5eci3wt3by
+    dev: false
+
   /eslint-config-next/13.2.0_7kw3g6rralp5ps6mg3uyzz6azm:
     resolution: {integrity: sha512-nZfIQG5m82xwgGO8EjakbF5qjnXADcveGxOxlg5J1jZ9MQlESvqqRrvl4+KHE+JKRgFD2h0q5xwDDWfFbtZmMA==}
     peerDependencies:
@@ -1863,13 +1885,13 @@ packages:
       eslint: 8.34.0
     dev: false
 
-  /eslint-config-turbo/0.0.8_eslint@8.34.0:
-    resolution: {integrity: sha512-ijj6uv0QX2kWahg3OYnTK1/q4MueXsqY2uE4MP9yeUA5CzVhL7GU+biKlv1BfMMqPltixHUcpZoW4yyNLCnMiw==}
+  /eslint-config-turbo/1.10.12_eslint@8.34.0:
+    resolution: {integrity: sha512-z3jfh+D7UGYlzMWGh+Kqz++hf8LOE96q3o5R8X4HTjmxaBWlLAWG+0Ounr38h+JLR2TJno0hU9zfzoPNkR9BdA==}
     peerDependencies:
       eslint: '>6.6.0'
     dependencies:
       eslint: 8.34.0
-      eslint-plugin-turbo: 0.0.8_eslint@8.34.0
+      eslint-plugin-turbo: 1.10.12_eslint@8.34.0
     dev: false
 
   /eslint-import-resolver-node/0.3.7:
@@ -2023,11 +2045,12 @@ packages:
       string.prototype.matchall: 4.0.8
     dev: false
 
-  /eslint-plugin-turbo/0.0.8_eslint@8.34.0:
-    resolution: {integrity: sha512-pExSCmjWw/KFKb3/0PVqxiWb30FbcwDEf6kKv3alvNBSVEzDHalyAGHc9klbLSG+nFmbkfNE3Ky/UHDryCqt8g==}
+  /eslint-plugin-turbo/1.10.12_eslint@8.34.0:
+    resolution: {integrity: sha512-uNbdj+ohZaYo4tFJ6dStRXu2FZigwulR1b3URPXe0Q8YaE7thuekKNP+54CHtZPH9Zey9dmDx5btAQl9mfzGOw==}
     peerDependencies:
       eslint: '>6.6.0'
     dependencies:
+      dotenv: 16.0.3
       eslint: 8.34.0
     dev: false
 
@@ -4447,6 +4470,12 @@ packages:
     resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
     engines: {node: '>=4.2.0'}
     hasBin: true
+
+  /typescript/5.1.6:
+    resolution: {integrity: sha512-zaWCozRZ6DLEWAWFrVDz1H6FVXzUSfTy5FUMWsQlU8Ym5JP9eO4xkTIROFCQvhQf61z6O/G6ugw3SgAnvvm+HA==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    dev: false
 
   /unbox-primitive/1.0.2:
     resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==}
